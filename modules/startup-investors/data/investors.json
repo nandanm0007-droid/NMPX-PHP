@@ -1,0 +1,15 @@
+[
+    {
+        "user_id": 3,
+        "investor_type": "State Govt",
+        "organization_name": "EcoCroAI Pvt. Ltd.",
+        "investment_range_min": 90000,
+        "investment_range_max": 70000000,
+        "preferred_sectors": "Technology,Healthcare,Education,Agriculture,E-commerce,Renewable Energy,Food &amp; Beverage,Real Estate,Transportation",
+        "location": "",
+        "description": "",
+        "status": "approved",
+        "id": 1,
+        "created_at": "2026-08-07 08:43:34"
+    }
+]

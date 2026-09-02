@@ -1,0 +1,32 @@
+[
+    {
+        "user_id": 2,
+        "company_name": "abx and co",
+        "industry": "Technology",
+        "location": "",
+        "problem_statement": "",
+        "solution": "",
+        "market_potential": "",
+        "funding_amount": 0,
+        "pitch_file": null,
+        "video_link": "",
+        "status": "pending",
+        "id": 1,
+        "created_at": "2026-08-07 08:26:39"
+    },
+    {
+        "user_id": 2,
+        "company_name": "EcoCrop AI Pvt. Ltd.",
+        "industry": "Agriculture",
+        "location": "karnataka",
+        "problem_statement": "Small and medium-scale farmers often struggle with unpredictable weather, pest infestations, and inefficient irrigation practices. Limited access to real-time agricultural insights leads to lower crop yields, increased costs, and reduced profitability.",
+        "solution": "EcoCrop AI is an AI-powered smart farming platform that combines IoT sensors, satellite imagery, and machine learning to provide farmers with real-time crop health monitoring, irrigation recommendations, pest detection, and yield forecasting through a mobile application available in regional languages.",
+        "market_potential": "India has over 140 million hectares of agricultural land and more than 100 million farmers. With increasing adoption of digital agriculture and government support for AgriTech, the smart farming market is growing rapidly. EcoCrop AI aims to serve over 500,000 farmers within five years through subscription-based services and partnerships with agricultural cooperatives, generating scalable recurring revenue.",
+        "funding_amount": 700000000,
+        "pitch_file": null,
+        "video_link": "",
+        "status": "pending",
+        "id": 2,
+        "created_at": "2026-08-07 08:39:05"
+    }
+]

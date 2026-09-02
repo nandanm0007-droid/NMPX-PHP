@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "name": "heisenberg",
+        "email": "dhonimsd542@gmail.com",
+        "password": "$2y$10$vTBH.imZEHhMr8cH9SMZoudDErE.op33\/7FtS9\/UiWkIV.1W3Y2qO",
+        "role": "student",
+        "created_at": "2026-08-11 19:16:24"
+    }
+]
