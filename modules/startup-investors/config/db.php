@@ -1,4 +1,8 @@
 <?php
+// ============================================================
+// NMPX InvestConnect - JSON flat-file storage layer
+// ============================================================
+
 error_reporting(E_ALL);
 // Errors are logged but NOT shown to visitors (set to 1 only for local debugging)
 ini_set('display_errors', 0);
