@@ -229,10 +229,10 @@ Implemented protections:
 
 - **JSON flat files** — fine for demos/small deployments, but not suited to high concurrency or large datasets. Migrating to MySQL is the natural next step.
 - **CareerConnect accounts** are session-only (registered users are not persisted between server restarts), and its demo stores passwords in plaintext in the session.
-- **Upload path mismatch** — `submit-idea.php` writes pitch decks to `modules/startup-investors/uploads/pitch_decks/`, while the prepared (`.htaccess`-protected) folder is `modules/startup-investors/upload/pitch_decks/`. Align these paths before using uploads in production.
-- **`test-write.php`** is a development/test script in the InvestConnect module and should be removed from production.
+- ~~**Upload path mismatch**~~ — **fixed**: `submit-idea.php` and `startup-detail.php` now use the `.htaccess`-protected `modules/startup-investors/upload/pitch_decks/` folder.
+- ~~**`test-write.php`**~~ — **removed** from the InvestConnect module.
 - Career Mentor "AI" logic is **rule-based** (degree stream → curated content), not a real AI/ML model.
-- `display_errors` is enabled in `config/db.php` — turn it off in production.
+- ~~`display_errors` is enabled in `config/db.php`~~ — **fixed**: errors are now logged but not shown (`display_errors` = 0).
 
 ---
 

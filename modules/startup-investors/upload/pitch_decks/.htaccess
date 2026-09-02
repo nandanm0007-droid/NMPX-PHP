@@ -1,4 +1,19 @@
-<FilesMatch "\.(php|phtml|php3|php4|php5|pl|py|cgi|asp|aspx)$">
-    Order allow,deny
-    Deny from all
+# Block script execution inside the pitch-deck upload folder
+<FilesMatch "\.(php|phtml|php3|php4|php5|php7|php8|pht|pl|py|cgi|asp|aspx|sh|htaccess)$">
+    <IfModule mod_authz_core.c>
+        # Apache 2.4
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        # Apache 2.2 fallback
+        Order allow,deny
+        Deny from all
+    </IfModule>
 </FilesMatch>
+
+# Extra hardening: disable the PHP engine and script handlers in this folder entirely
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>
+RemoveHandler .php .phtml .php3 .php4 .php5 .php7 .php8 .pht .pl .py .cgi
+RemoveType .php .phtml .php3 .php4 .php5 .php7 .php8 .pht .pl .py .cgi

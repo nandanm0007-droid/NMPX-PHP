@@ -1,6 +1,7 @@
 <?php
 error_reporting(E_ALL);
-ini_set('display_errors', 1);
+// Errors are logged but NOT shown to visitors (set to 1 only for local debugging)
+ini_set('display_errors', 0);
 
 if (!defined('DATA_DIR')) {
     define('DATA_DIR', __DIR__ . '/../data/');

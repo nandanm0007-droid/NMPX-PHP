@@ -39,7 +39,7 @@ include 'includes/header.php';
 
   <?php if (!empty($startup['pitch_file'])): ?>
   <div class="detail-section"><h4>Pitch Deck</h4>
-    <a href="uploads/pitch_decks/<?= sanitize($startup['pitch_file']) ?>" target="_blank" class="btn btn-outline btn-sm">📄 Download Pitch Deck</a>
+    <a href="upload/pitch_decks/<?= sanitize($startup['pitch_file']) ?>" target="_blank" class="btn btn-outline btn-sm">📄 Download Pitch Deck</a>
   </div>
   <?php endif; ?>
 

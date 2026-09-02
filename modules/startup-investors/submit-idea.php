@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $errors[] = "File size must be under 10MB.";
             } else {
                 $newName = 'pitch_' . uniqid() . '.' . $ext;
-                $target = __DIR__ . '/uploads/pitch_decks/' . $newName;
+                $target = __DIR__ . '/upload/pitch_decks/' . $newName;
                 if (move_uploaded_file($_FILES['pitch_file']['tmp_name'], $target)) {
                     $pitch_file = $newName;
                 } else {
