@@ -8,11 +8,16 @@ NMPX is an all-in-one career and startup ecosystem built in pure **PHP** (no dat
 2. 💼 **CareerConnect** — job search, matching and application tracking
 3. 🚀 **Startup Investors (InvestConnect)** — a startup ↔ investor networking platform
 
+## 🌐 Live Demo
+
+👉 **[https://nmpx.site.je](https://nmpx.site.je)** — hosted for free on InfinityFree
+
 ---
 
 ## 📋 Table of Contents
 
 - [Overview](#-overview)
+- [Live Demo](#-live-demo)
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
 - [Requirements](#-requirements)
@@ -20,6 +25,7 @@ NMPX is an all-in-one career and startup ecosystem built in pure **PHP** (no dat
 - [Default Credentials](#-default-credentials)
 - [Project Structure](#-project-structure)
 - [How It Works](#-how-it-works)
+- [Deployment](#-deployment)
 - [Security Notes](#-security-notes)
 - [Known Limitations](#-known-limitations)
 
@@ -209,6 +215,20 @@ NMPX/
 - **InvestConnect auth** — separate session keys (`user_id`, `role`, `profile_id`) with role-based redirects; every state-changing form is protected by a **CSRF token** (`generate_csrf_token()` / `verify_csrf_token()`).
 - **JSON database** — each "table" is a JSON file read/written under shared/exclusive file locks; auto-increment IDs live in `counters.json`.
 - **Pitch uploads** — validated by extension (`.pdf/.ppt/.pptx`) and size (≤ 10 MB), renamed to `pitch_<uniqid>.<ext>`.
+
+---
+
+## 🚀 Deployment
+
+NMPX is deployed and hosted for **free** on [InfinityFree](https://www.infinityfree.com):
+
+- **Live URL:** [https://nmpx.site.je](https://nmpx.site.je)
+- **Host:** InfinityFree free plan — PHP 8.x + Apache, free subdomain, free SSL (Let's Encrypt)
+- **No database needed** — all data lives in JSON flat files (`data/` and `modules/startup-investors/data/`), so any basic PHP host works
+- **Deploy steps:** upload the project contents to `htdocs/`, enable the free SSL certificate, keep `data/` and `modules/startup-investors/upload/` writable
+- **Backup / migrate:** download the `data/` folders and re-upload them to any new host — that is the entire "database"
+
+> ⚠️ Never commit FTP or hosting-panel credentials to this repository. Change the default admin password on any live deployment.
 
 ---
 
